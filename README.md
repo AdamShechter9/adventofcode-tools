@@ -15,11 +15,19 @@ myBoard.allValues();
 console.log('a', myBoard.isNode('a'));
 
 Connection types:
+
 NOT p -> q
+
 lx -> a
+
 14146 -> b
+
 af AND ah -> ai
+
 1 AND cx -> cy
+
 x OR ai -> aj
+
 kk RSHIFT 3 -> km
+
 ip LSHIFT 15 -> it
