@@ -49,44 +49,75 @@ ip LSHIFT 15 -> it
 
 -------------------------------------------------------------
 matrixGraph.js
+
 var matrixGraph = require('./matrixGraph.js');
-var myInput = String(input);
+
 var myInput1 = "^v^v^v^v^v";
 
 var myMatrix1 = matrixGraph.init();
-		for(var i=0;i<myInput.length;i+=1) {
-			//console.log(myInput.charAt(i));
-			//console.log(myMatrix);
+
+		for(var i=0;i<input.length;i+=1) {
+		
 			if (i % 2 === 0) {
+			
 				var currChar1 = myInput.charAt(i);
+				
 				if (currChar1 === '^') {
+				
 					console.log('up');
+					
 					myMatrix1.up();
+					
 				} else if (currChar1 === '>') {
+				
 					console.log('right');
+					
 					myMatrix1.right();
+					
 				} else if (currChar1 === 'v') {
+				
 					console.log('down');
+					
 					myMatrix1.down();
+					
 				} else if (currChar1 ===  '<') {
+				
 					console.log('left');
+					
 					myMatrix1.left();
+					
 				}
+				
 				//console.log("move1",myMatrix1.center);
+				
 			} else {
+			
 				var currChar2 = myInput.charAt(i);
+				
 				if (currChar2 === '^') {
+				
 					console.log('up2');
+					
 					myMatrix1.up2();
+					
 				} else if (currChar2 === '>') {
+				
 					console.log('right2');
+					
 					myMatrix1.right2();
+					
 				} else if (currChar2 === 'v') {
+				
 					console.log('down2');
+					
 					myMatrix1.down2();
+					
 				} else if (currChar2 ===  '<') {
+				
 					console.log('left2');
+					
 					myMatrix1.left2();
+					
 				}	
 				//console.log("move2",myMatrix1.secondary);			
 			}
